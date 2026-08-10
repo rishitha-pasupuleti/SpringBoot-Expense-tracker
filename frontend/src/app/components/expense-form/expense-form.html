@@ -1,0 +1,59 @@
+<div class="card shadow p-4 mb-4">
+
+  <h3 class="mb-4">🧾 Add Expense</h3>
+
+  <div class="row g-3">
+
+    <div class="col-md-6">
+      <input
+        class="form-control"
+        placeholder="Title"
+        [(ngModel)]="expense.title">
+    </div>
+
+    <div class="col-md-6">
+      <input
+        class="form-control"
+        type="number"
+        placeholder="Amount"
+        [(ngModel)]="expense.amount">
+    </div>
+
+    <div class="col-md-6">
+
+      <select
+        class="form-select"
+        [(ngModel)]="expense.category">
+
+        <option value="">Select Category</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Shopping</option>
+        <option>Bills</option>
+        <option>Entertainment</option>
+        <option>Other</option>
+
+      </select>
+
+    </div>
+
+    <div class="col-md-6">
+
+      <input
+        class="form-control"
+        type="date"
+        [(ngModel)]="expense.date">
+
+    </div>
+
+  </div>
+
+  <button
+    class="btn btn-success mt-4"
+    (click)="addExpense()">
+
+    Add Expense
+
+  </button>
+
+</div>

@@ -1,0 +1,102 @@
+<app-expense-form (expenseAdded)="loadExpenses()"></app-expense-form>
+
+<div class="card shadow p-4">
+
+  <div class="d-flex justify-content-between align-items-center mb-3">
+
+    <h3>💰 Expenses</h3>
+
+    <div class="w-25">
+
+      <select
+        class="form-select"
+       [(ngModel)]="category"
+        (change)="loadExpenses()">
+        <option value="">All Categories</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Shopping</option>
+        <option>Bills</option>
+        <option>Entertainment</option>
+        <option>Other</option>
+
+     </select>
+
+   </div>
+
+ </div>
+
+ <table class="table table-bordered table-hover">
+
+   <thead class="table-dark">
+
+   <tr>
+     <th>Title</th>
+     <th>Amount</th>
+     <th>Category</th>
+     <th>Date</th>
+     <th>Status</th>
+     <th>Actions</th>
+   </tr>
+
+   </thead>
+
+   <tbody>
+
+   <tr *ngFor="let expense of expenses">
+
+     <td>{{expense.title}}</td>
+
+     <td>₹{{expense.amount}}</td>
+
+     <td>{{expense.category}}</td>
+
+     <td>{{expense.date}}</td>
+
+     <td>
+
+                   <span
+                     class="badge"
+                     [class.bg-success]="expense.completed"
+                     [class.bg-secondary]="!expense.completed">
+
+                       {{expense.completed ? 'Completed' : 'Pending'}}
+
+                   </span>
+
+     </td>
+
+     <td>
+
+       <button
+         class="btn btn-success btn-sm me-2"
+         (click)="toggleComplete(expense.id!)">
+
+         ✔
+
+       </button>
+
+       <button
+         class="btn btn-danger btn-sm"
+         (click)="deleteExpense(expense.id!)">
+
+         Delete
+
+       </button>
+
+     </td>
+
+   </tr>
+
+   </tbody>
+
+ </table>
+
+ <h4 class="text-end mt-3">
+
+   💰 Total Expense :
+   <span class="text-success">₹{{total}}</span>
+
+ </h4>
+
+</div>

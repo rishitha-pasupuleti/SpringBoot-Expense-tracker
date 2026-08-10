@@ -1,0 +1,15 @@
+[ {
+  "amount" : 200.0,
+  "id" : 2,
+  "title" : "Groceries",
+  "category" : "Food",
+  "date" : "2026-07-31",
+  "completed" : true
+}, {
+  "amount" : 500.0,
+  "id" : 3,
+  "title" : "Snacks",
+  "category" : "Food",
+  "date" : "2026-07-15",
+  "completed" : true
+} ]

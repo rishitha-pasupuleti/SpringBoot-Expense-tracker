@@ -1,0 +1,41 @@
+<div class="card shadow p-4">
+
+  <h2 class="mb-4">📊 Monthly Summary</h2>
+
+  <div class="row">
+
+    <div class="col-md-4">
+
+      <input
+        type="month"
+        class="form-control"
+        [(ngModel)]="month">
+
+    </div>
+
+    <div class="col-md-3">
+
+      <button
+        class="btn btn-primary"
+        (click)="getSummary()">
+
+        Get Summary
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <hr>
+
+  <h3>
+
+    💰 Monthly Expense :
+    <span class="text-success">
+            ₹{{monthlyTotal}}
+        </span>
+
+  </h3>
+
+</div>
