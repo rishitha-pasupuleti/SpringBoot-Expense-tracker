@@ -6,7 +6,7 @@ A full-stack **Expense Tracker application** built using **Spring Boot** and **A
 ## 🚀 Live Demo
 
 **GitHub Pages:**
-https://2200032932.github.io/SpringBoot-Expense-tracker/
+https://rishitha-pasupuleti.github.io/SpringBoot-Expense-tracker/
 
 ---
 
@@ -116,7 +116,7 @@ Additional filtering and analysis endpoints can be used for category-based expen
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/2200032932/SpringBoot-Expense-tracker.git
+git clone https://github.com/rishitha-pasupuleti/SpringBoot-Expense-tracker.git
 ```
 
 ```bash
@@ -260,8 +260,8 @@ Interested in Software Engineering, Full-Stack Development, Cloud, DevOps, and A
 
 ### Connect
 
-* GitHub: https://github.com/2200032932
-* Portfolio: https://2200032932.github.io/
+* GitHub: https://github.com/rishitha-pasupuleti
+* Portfolio: https://rishitha-pasupuleti.github.io/portfolio.github.io/
 
 ---
 
